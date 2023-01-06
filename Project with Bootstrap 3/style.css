@@ -1,0 +1,217 @@
+/* Defau;t */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'sranger';
+  src: url('../fonts/spaceranger.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fearth';
+  src: url('../fonts/FutureEarth.ttf') format('truetype');
+}
+
+hr {
+  width: 250px;
+  border-top: 6px solid #666;
+  margin: 20px auto 30px;
+}
+
+
+
+
+/* navbar */
+.navbar .navbar-brand {
+  font-family: 'sranger';
+  font-weight: lighter;
+  font-size: 2em;
+  letter-spacing: .8px;
+  font-style: italic;
+}
+
+.navbar ul li {
+  font-size: .7em;
+  font-weight: lighter;
+  font-family: 'fearth';
+}
+/* akhir navbar */
+
+
+
+/* jumbotron */
+.jumbotron {
+  box-sizing: border-box;
+  padding-top: 7rem;
+  overflow: hidden;
+  background-image: url('../media/bg\ 6.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  cursor: default;
+}
+
+.jumbotron img {
+  border: 7px solid #666;
+}
+
+.jumbotron h1 {
+  font-family: 'sranger';
+  font-size: 4.4rem;
+  font-style: italic;
+}
+
+.jumbotron p {
+  font-size: 25px;
+  font-weight: 550;
+}
+/* akhir jumbotron */
+
+
+
+/* about */
+.about {
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  cursor: default;
+}
+
+.about h2 {
+  font-family: 'fearth';
+  font-size: 1.6rem;
+}
+
+.about .second {
+  margin-top: 30px;
+}
+
+.about p {
+  font-size: 17px;
+}
+
+.about .pKiri, .pKanan {
+  opacity: 0;
+  transform: translate(-50px, 0) rotate(15deg);
+  transition: 1s;
+}
+
+.about .pKanan {
+  transform: translate(50px, 0) rotate(-15deg);
+}
+
+.about .pKiri.pMuncul, .about .pKanan.pMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/* akhir about */
+
+
+
+/* music video */
+.music {
+  background-color: #aeaeae;
+  box-sizing: border-box;
+  padding: 20px 0 50px;
+  cursor: default;
+}
+
+.music h2 {
+  font-family: 'fearth';
+  font-size: 1.6rem;
+}
+
+.music .iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: .5s;
+  transform: translate(0, -40px);
+}
+
+.music .iframe-container.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.music .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* akhir music video */
+
+
+
+/* contact */
+.contact {
+  box-sizing: border-box;
+  padding: 20px 0 80px;
+  cursor: default;
+}
+
+.contact h2 {
+  font-family: 'fearth';
+  font-size: 1.6rem;
+}
+
+.contact label {
+  font-size: 18px;
+}
+
+.contact input, .contact textarea {
+  border: 3px solid #333;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  font-weight: 550;
+}
+
+.contact textarea {
+  resize: none;
+}
+/* akhir contact */
+
+
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #eee;
+  cursor: default;
+}
+
+footer ul {
+  width: 300px;
+  margin: 20px auto 40px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li a {
+  color: #eee;
+}
+
+footer ul li a svg {
+  fill: #eee;
+}
+
+footer ul li a:hover, footer ul li a:hover svg{
+  color: #999;
+  text-decoration: none;
+  fill: #999;
+}
+
+footer .copyright {
+  color: rgb(136, 136, 136);
+}
+/* akhir footer */
